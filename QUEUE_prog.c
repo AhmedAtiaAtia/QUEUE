@@ -264,7 +264,7 @@ LBTY_tenuErrorStatus QUEUE_enuIsEmpty ( Queue * pq_cpy , u8 * pout_cpy)
 	/**            queue is Empty    					       */
 	/***********************************************************/
 	
-		if  (( pq_cpy -> front  > pq_cpy -> rear ) && ((pq_cpy -> QueueData [pq_cpy->front]) == 0))
+		if  (( pq_cpy -> front  == pq_cpy -> rear ) && ((pq_cpy -> QueueData [pq_cpy->front]) == 0))
 		{
 						    /************************************/
 			*pout_cpy = 1 ; /** mean queue Empty                */
